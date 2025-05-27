@@ -1,16 +1,37 @@
-# news_app
+# 📰 News App
 
-A new Flutter project.
+A basic Flutter project set up for a future news application.
 
-## Getting Started
+## 🚀 Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK
+- Dart SDK
+- A device/emulator to run the app
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository:
+```bash
+git clone https://github.com/AhmedEssammm/news-app.git
+cd news-app
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Get dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+## 🔨 Features (To Be Added)
+
+- Fetching news from an API
+- Displaying headlines and article details
+- Search and filter functionality
+- Dark/Light mode
+
+Stay tuned for updates!

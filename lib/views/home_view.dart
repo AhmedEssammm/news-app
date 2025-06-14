@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widgets/categories_list_view.dart';
-import 'package:news_app/widgets/news_list_view.dart';
+import 'package:news_app/widgets/news_list_view_builder.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -11,7 +11,7 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.transparent,
-        title: Row(
+        title: const Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
@@ -25,8 +25,8 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 8),
         child: CustomScrollView(
           slivers: [
             SliverToBoxAdapter(
@@ -37,7 +37,9 @@ class HomeView extends StatelessWidget {
                 height: 32,
               ),
             ),
-            NewsListView(),
+            NewsListViewBuilder(
+              category: 'general',
+            ),
           ],
         ),
       ),

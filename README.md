@@ -1,6 +1,21 @@
 # 📰 News App
 
-A basic Flutter project set up for a future news application.
+A modern and responsive Flutter app that fetches and displays real-time news using a public news API.
+
+## 📱 Features
+
+- 🌍 **Homepage** displaying all latest news
+- 📚 **Category-based filtering**: General, Entertainment, Health, Science, Sports, Technology
+- 📱 **Clean UI** with scrollable category chips
+- 📰 **News detail page**: view full content, author name, and publication info
+- 🔄 **Live API integration** for dynamic data
+- 🌙 Ready for future improvements like dark mode or bookmarking
+
+## 🖼️ Screenshots
+
+![NewsAppHomepage](https://github.com/user-attachments/assets/c3e10927-32f6-497d-b287-be21eebbab27)
+![NewsAppCategoeyPage](https://github.com/user-attachments/assets/479a629f-69e5-48fa-b79a-f115bdb0aa5a)
+![NewsAppNewsPage](https://github.com/user-attachments/assets/52f71398-d33e-433c-b953-a4f7d95c2bdc)
 
 ## 🚀 Getting Started
 
@@ -8,6 +23,7 @@ A basic Flutter project set up for a future news application.
 - Flutter SDK
 - Dart SDK
 - A device/emulator to run the app
+- A news API key (e.g., from [NewsAPI.org](https://newsapi.org/))
 
 ### Installation
 
@@ -26,12 +42,3 @@ flutter pub get
 ```bash
 flutter run
 ```
-
-## 🔨 Features (To Be Added)
-
-- Fetching news from an API
-- Displaying headlines and article details
-- Search and filter functionality
-- Dark/Light mode
-
-Stay tuned for updates!

@@ -7,17 +7,32 @@ class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
-            child: SizedBox(
-              height: 64,
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              category,
+              style: const TextStyle(color: Colors.black),
             ),
-          ),
-          NewsListViewBuilder(
-            category: category,
-          ),
-        ],
+            const Text(
+              'News',
+              style: TextStyle(color: Colors.blue),
+            ),
+          ],
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8),
+        child: CustomScrollView(
+          slivers: [
+            NewsListViewBuilder(
+              category: category,
+            ),
+          ],
+        ),
       ),
     );
   }
